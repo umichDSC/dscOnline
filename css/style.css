@@ -1,3 +1,6 @@
 body {
     background-image: url("../images/dsclogo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
 }
