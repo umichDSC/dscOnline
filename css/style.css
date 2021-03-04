@@ -1,9 +1,28 @@
 body {
-    background-image: url("../images/dsclogo.png");
     background-repeat: no-repeat;
     background-position-x: center;
     
 }
+
+.introduction {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #4c8bf5;
+}
+
+.changeButtonHTML { 
+    cursor: pointer; 
+    border: 1px solid #555; 
+    border-radius: 40%; 
+    width: 20px; 
+    text-align: center; 
+    padding: 5px; 
+    margin-left: 8px; 
+} 
+
+.dark{ 
+    background-color: #222; 
+    color: #e6e6e6; 
+} 
 
 /* Use for formatting carousel */
 /* #carouselContainer{
