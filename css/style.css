@@ -1,4 +1,6 @@
 /* Index */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 body {
     background-repeat: no-repeat;
     background-position-x: center;
@@ -6,8 +8,12 @@ body {
 }
 
 .introduction {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    color: #4c8bf5;
+    font-family: 'Quicksand', sans-serif;
+    color:grey;
+}
+
+.navbar {
+    background-color:#f1f3f4;
 }
 
 .changeButtonHTML { 
