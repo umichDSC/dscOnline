@@ -1,15 +1,31 @@
 /* Index */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-body {
+html, body {
     background-repeat: no-repeat;
     background-position-x: center;
+    height:100%;
+    width: 100%;
     
 }
 
-.introduction {
-    font-family: 'Quicksand', sans-serif;
-    color:grey;
+#mainWrapper {
+    height:100%;
+    width:100%;
+}
+
+#headerContainer {
+    height:70%;
+    background-color:#f1f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    font-size: 500%;
+    font-weight: bold;
+    color:black;
 }
 
 .navbar {
@@ -26,9 +42,13 @@ body {
     margin-left: 8px; 
 } 
 
-.dark{ 
-    background-color: #222; 
-    color: #e6e6e6; 
+.dark{
+    background-color: #222 !important; 
+    color: #e6e6e6 !important; 
+} 
+.dark2{
+    background-color: lightgrey !important; 
+    color: #e6e6e6 !important; 
 } 
 
 /* Use for formatting carousel */
