@@ -57,6 +57,17 @@ html, body {
     opacity: 0.3;
 }
 
+/* about */
+.card{
+    width: 10%;
+}
+.image{
+    width:  100px;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+
+}
 
 /* Contact */
 
