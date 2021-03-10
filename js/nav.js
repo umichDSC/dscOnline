@@ -18,11 +18,13 @@ function changeButtonHTML(obj) {
   }
 }
 
-function goToComPage() {
-  window.open("https://dsc.community.dev/university-of-michigan/");
-}
-
-$(".carousel").carousel({
-  interval: 7000,
-  pause: false,
+jQuery(function ($) {
+  var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+  $("ul a").each(function () {
+    if (this.href === path) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+  });
 });
