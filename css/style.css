@@ -76,3 +76,16 @@ html, body {
     margin-right: auto;
     font-size: 200%;
 }
+
+/* Resource */
+.resource-image {
+    width: 400px;
+    height: auto;
+}
+
+.resource-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
