@@ -50,6 +50,10 @@ html, body {
     float: right;
 }
 
+#quoteSegment {
+    margin-top: 5%;
+}
+
 .changeButtonHTML { 
     cursor: pointer; 
     border: 1px solid #555; 
@@ -61,7 +65,7 @@ html, body {
 } 
 
 .dark{
-    background-color: #222 !important; 
+    background-color: #121212 !important; 
     color: #e6e6e6 !important; 
 } 
 .dark2{
