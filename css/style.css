@@ -9,6 +9,19 @@ html, body {
     
 }
 
+#dscLogoHeader {
+    margin-top: -25%;
+}
+
+.inner{
+    position:absolute;
+}
+
+#contentGrid {
+    margin-top: 1%;
+    font-size: xx-large;
+}
+
 #mainWrapper {
     height:100%;
     width:100%;
@@ -30,6 +43,14 @@ html, body {
 
 .navbar {
     background-color:#f1f3f4;
+}
+
+#navbarID {
+    position: fixed;
+}
+
+#darkModeButton {
+    float: right;
 }
 
 .changeButtonHTML { 
