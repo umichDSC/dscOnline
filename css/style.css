@@ -45,9 +45,6 @@ html, body {
     background-color:#f1f3f4;
 }
 
-#navbarID {
-    position: fixed;
-}
 
 #darkModeButton {
     float: right;
