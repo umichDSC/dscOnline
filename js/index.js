@@ -5,7 +5,7 @@ function changeButtonHTML(obj) {
   if (obj.innerHTML == "Dark Mode") {
     obj.innerHTML = "Light Mode";
     element.classList.toggle("dark2");
-    head.classList.toggle("dark");
+    head.classList.toggle("darkTest");
     headText.classList.toggle("dark");
     return;
   }
