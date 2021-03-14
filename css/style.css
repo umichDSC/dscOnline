@@ -72,7 +72,11 @@ html, body {
     background-color: lightgrey !important; 
     color: #e6e6e6 !important; 
 } 
-
+.darkTest {
+    background-image: url("/images/giphy.gif") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
 /* Use for formatting carousel */
 #carouselContainer{
     height: 30%;
