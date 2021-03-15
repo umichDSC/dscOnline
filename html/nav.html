@@ -1,38 +1,48 @@
 <html>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbarID">
-      <a class="navbar-brand" href="/">
-      <img src="/images/dsclogo-notext.png" height="30" alt="DSC Logo">
-        UMich DSC
-    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/html/aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/html/contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/html/events.html">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/html/resources.html">Resources</a>
-        </li>
-      </ul>
-    </div>
-    
-    <button class="btn btn-outline-secondary" id="darkModeButton"onclick="changeButtonHTML(this)">Dark Mode</button>
+    <nav class="navbar navbar-expand-lg navbar-light fs-5" id="navbarID">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.svg" height="30" alt="DSC Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <button class="btn btn-outline-secondary" id="dark-mode-button" onclick="changeButtonHTML(this)">Dark Mode</button> -->
+        <label class="float-end">
+          <input id="theme-toggler" class='toggle-checkbox' type='checkbox' onchange="toggleTheme(event)"></input>
+          <div class='toggle-slot'>
+            <div class='sun-icon-wrapper'>
+              <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+            </div>
+            <div class='toggle-button'></div>
+            <div class='moon-icon-wrapper'>
+              <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+            </div>
+          </div>
+        </label>
+      </div>
+      
     </nav>
     
     <script type="text/javascript" src="/js/nav.js"></script>
   </body>
 </html>
-

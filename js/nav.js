@@ -1,20 +1,26 @@
-function changeButtonHTML(obj) {
-  var element = document.body;
-  var head = document.getElementById("headerContainer");
-  var headText = document.getElementById("header");
-  if (obj.innerHTML == "Dark Mode") {
-    obj.innerHTML = "Light Mode";
-    element.classList.toggle("dark2");
-    head.classList.toggle("dark");
-    headText.classList.toggle("dark");
-    return;
+const currentTheme = localStorage.getItem("theme")
+  ? localStorage.getItem("theme")
+  : null;
+
+if (currentTheme) {
+  // theme: 'light' or 'dark'
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  const themeToggler = document.getElementById("theme-toggler");
+  if (currentTheme === "dark") {
+    themeToggler.checked = true;
   }
-  if (obj.innerHTML == "Light Mode") {
-    obj.innerHTML = "Dark Mode";
-    element.classList.toggle("dark2");
-    head.classList.toggle("dark");
-    headText.classList.toggle("dark");
-    return;
+}
+
+function toggleTheme(event) {
+  const elt = event.target;
+  if (elt.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    // store preference in localStorage
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    // store preference in localStorage
+    localStorage.setItem("theme", "light");
   }
 }
 
