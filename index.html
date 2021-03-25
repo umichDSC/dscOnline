@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-      <script>
-        $("head").load("/html/head.html");
-      </script>
-      <script type="text/javascript" src="/js/index.js"></script>
-    </head>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script>
+      $("head").load("/html/head.html");
+    </script>
+    <script type="text/javascript" src="/js/index.js"></script>
+  </head>
   
   <body>
     <div id="main-wrapper">
@@ -32,9 +32,7 @@
       </div>
 
       <div class="index-content p-5">
-        <div class="ui middle aligned stackable grid container" id="content-grid">
-          <div class="row">
-            <div class="twelve wide column">
+        <div class="container" id="content-grid">
               <h1 class="ui large header">We are Developer Student Club.</h1>
               <p class="fs-3">Welcome! At Google DSC, we care about bridging the gap between
                 theory and practice. As a community, we learn different Google
@@ -43,15 +41,8 @@
                 amazing friends with those around us. If this sounds like something
                 you're interested in, join us above!
               </p>
-            </div>
-            <div class="four wide column"></div>
-          </div>
-          <div class="row">
-            <div class="twelve wide column">
               <h1 class="ui large header">We Do Things That Matter</h1>
               <p class="fs-3">things that matter</p>
-            </div>
-          </div>
         </div>
   
         <div class="ui vertical stripe quote segment" id="quote-segment">
@@ -76,9 +67,10 @@
       <div id="footercontainer">
       <script>
         $(function() {
-          $("#footercontainer").load("html/footer.html"); 
+          $("#footercontainer").load("/html/footer.html"); 
         });
       </script>
+
       </div>
     </div>
   </body>
