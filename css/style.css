@@ -4,6 +4,7 @@
 :root {
     --bg: white;
     --bg-secondary: #f8f8f8;
+    --bg-tertiary: #0c0c0c;
     --headings: #000;
     --text: black;
     --text-secondary: black;
@@ -25,6 +26,7 @@ body {
 html[data-theme="dark"] {
     --bg: #121212;
     --bg-secondary: lightgrey;
+    --bg-tertiary: white;
     --headings: #0c0c0c;
     --text: white;
     --text-secondary: 0c0c0c;
@@ -104,7 +106,7 @@ html[data-theme="dark"] {
     opacity: 0.3;
 }
 
-/* about */
+/* About */
 .card{
     width: 10%;
 }
@@ -137,11 +139,10 @@ html[data-theme="dark"] {
     height: auto;
 }
 
-.resource-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+/* Footer */
+.card.footer {
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 /* Theme toggler */

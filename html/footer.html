@@ -1,61 +1,33 @@
 <html>
-    <style>
-        .footer {
-            background-color: #121212 !important;
-        }
-        #FH1, #FH2 {
-            color: lightgrey;
-        }
-    </style>
     <body>
-        <div class="ui vertical footer segment">
-            <div class="ui container">
-                <div class="ui stackable divided equal height stackable grid">
-                    <div class="two wide column">
-                        <h4 class="ui header" id="FH1">About</h4>
-                        <div class="ui link list">
-                            <a href="#" class="item">link</a>
-                            <a href="#" class="item">link</a>
-                            <a href="#" class="item">link</a>
-                        </div>
-                    </div>
-                    <div class="one wide column">
+        <div class="card footer text-center w-100">
+            <div class="card-body">
+                <div class="container">
+                    <a type="button" href="https://www.facebook.com/Developer-Student-Clubs-University-of-Michigan-113298156721763/" class="ui circular facebook icon button">
+                        <i class="facebook icon"></i>
+                    </a>
+    
+                    <a type="button" href="#" class="ui circular instagram icon button">
+                        <i class="instagram icon"></i>
+                    </a>
+    
+                    <a type="button" href="https://www.linkedin.com/company/dsc-umich/" class="ui circular linkedin icon button">
+                        <i class="linkedin icon"></i>
+                    </a>
+    
+                    <a type="button" href="googledsc-requests@umich.edu" class="ui circular envelope icon button">
+                        <i class="envelope icon"></i>
+                    </a>
 
-                            <button class="ui circular facebook icon button">
-                                <i class="facebook icon"></i>
-                              </button>
-
-                    </div>
-                    <div class="one wide column">
-
-                            <button class="ui circular instagram icon button">
-                                <i class="instagram icon"></i>
-                              </button>>
-
-                    </div>
-                    <div class="one wide column">
-
-                            <button class="ui circular linkedin icon button">
-                                <i class="linkedin icon"></i>
-                              </button>
-
-                    </div>
-                    <div class="one wide column">
-                            <a type="button"  href="/html/contact.html" class="ui circular envelope icon button">
-                                <i class="envelope icon"></i>
-                            </a>
+                    <div id="copyright" class="mt-2">
+                        Copyright &#169; University of Michigan DSC
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            $(".item").css("color", "lightgrey");
-            $(".facebook").click(function () {
-                window.open("https://www.facebook.com/Developer-Student-Clubs-University-of-Michigan-113298156721763/");
-            })
-            $(".linkedin").click(function () {
-                window.open("https://www.linkedin.com/company/dsc-umich/");
-            })
+            var year = new Date().getFullYear();
+            document.getElementById("copyright").innerHTML += " " + year;
         </script>
     </body>
 </html>

@@ -16,6 +16,7 @@
         });
       </script>
 
+      <div class="container" style="min-height: 100%">
         <div style="margin-left:2%" class="ui link cards">
             <div class="card">
               <div class="image">
@@ -211,7 +212,16 @@
                 <span data-tooltip="Carnivore"><img src="/images/Meat-emoji.png" class="ui avatar image"></span>
               </div>
             </div>
-             
+            
         </div>
-            </body>
+      </div>
+        
+        <div id="footercontainer">
+        <script>
+          $(function() {
+            $("#footercontainer").load("/html/footer.html"); 
+          });
+        </script>
+      </div>
+  </body>
 </html>
