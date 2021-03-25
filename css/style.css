@@ -110,13 +110,20 @@ html[data-theme="dark"] {
 .card{
     width: 10%;
 }
-.image {
+/* .image {
     width:  100px;
     height: auto;
     object-fit: cover;
     margin: auto;
 
-}
+} */
+.image {
+    position: relative;
+    width: 100px;     
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+ }
 
 /* Contact */
 
