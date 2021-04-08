@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm *.html includes/*.html",
     "dev": "pug . -o . -w -P",
-    "build": "pug . -o . -P"
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/umichDSC/dscOnline#readme",
   "devDependencies": {
-    "pug-cli": "*"
+    "pug": "^3.0.2"
   }
 }
