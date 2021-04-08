@@ -7,7 +7,7 @@ block content
         - const descs = ["I enjoy that we get the opportunity to learn about the technologies that are changing the world.", "Cavun is a level 999 tech wizard", "Google DSC has introduced me to so many powerful technologies.", "The club is full of passionate and fun people. Also everyone is incredibly intelligent & are great problem solvers.", "Google gamer God", "Creating and doing meaningful projects for the community at large", "Love seeing all of the amazing projects the Solution Challenge teams make", "I love getting to work with a great team of passionate students who are motivated to create impact with Google technologies.", "Google DSC is a very open and inviting organization. We're affiliated with Google which means we have access to a lot of useful resources which some I didn't even know about before. I also love that we're given a lot of freedom to do what we want.", "The community is honestly so amazing", "Tom is also a level 999 tech wizard"]
         div(style="margin-left:2%" class="ui link cards")
             each name, idx in names
-                - const image = "/images/team/" + name.toLowerCase() + ".jpg"
+                - const image = "./images/team/" + name.toLowerCase() + ".jpg"
                 div.card
                     div.image
                         img(src=image)

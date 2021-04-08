@@ -1,6 +1,6 @@
 nav#navbarID(class="navbar navbar-expand-lg navbar-light fs-5")
     div.container 
-        a.navbar-brand(href="/build/index.html")
+        a.navbar-brand(href="./index.html")
             img(src="/images/logo.svg" height="30" alt="DSC Logo")
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
             span.navbar-toggler-icon
@@ -10,11 +10,11 @@ nav#navbarID(class="navbar navbar-expand-lg navbar-light fs-5")
             ul(class="navbar-nav mr-auto")
                 //- - const link = "/html/" + page.toLowerCase() + ".html"
                 li.nav-item
-                  a.nav-link(href="/build/team.html") Team
+                  a.nav-link(href="./team.html") Team
                 li.nav-item 
-                  a.nav-link(href="/build/events.html") Events
+                  a.nav-link(href="./events.html") Events
                 li.nav-item 
-                  a.nav-link(href="/build/resources.html") Resources
+                  a.nav-link(href="./resources.html") Resources
 
         label.float-end
             input#theme-toggler.toggle-checkbox(type='checkbox' onchange="toggleTheme(event)")
@@ -25,4 +25,4 @@ nav#navbarID(class="navbar navbar-expand-lg navbar-light fs-5")
                     div.moon-icon-wrapper
                         div(class="iconify moon-icon" data-icon="feather-moon" data-inline="false")
 
-script(type="text/javascript" src="/js/nav.js")
+script(type="text/javascript" src="./js/nav.js")

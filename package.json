@@ -4,7 +4,10 @@
   "description": "Univ. of Michigan DSC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm *.html includes/*.html",
+    "dev": "pug . -o . -w -P",
+    "build": "pug . -o . -P"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/umichDSC/dscOnline/issues"
   },
-  "homepage": "https://github.com/umichDSC/dscOnline#readme"
+  "homepage": "https://github.com/umichDSC/dscOnline#readme",
+  "devDependencies": {
+    "pug-cli": "*"
+  }
 }
