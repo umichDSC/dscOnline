@@ -1,0 +1,25 @@
+{
+  "name": "dsconline",
+  "version": "1.0.0",
+  "description": "Univ. of Michigan DSC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm *.html includes/*.html",
+    "dev": "pug . -o . -w -P",
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umichDSC/dscOnline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umichDSC/dscOnline/issues"
+  },
+  "homepage": "https://github.com/umichDSC/dscOnline#readme",
+  "devDependencies": {
+    "pug": "^3.0.2"
+  }
+}

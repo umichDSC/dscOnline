@@ -1,0 +1,15 @@
+div(class="card footer text-center w-100")
+    div.card-body
+        div.container
+            - const icons = ["facebook", "instagram", "linkedin", "envelope"]
+            - const links = ["https://www.facebook.com/Developer-Student-Clubs-University-of-Michigan-113298156721763/", "#", "https://www.linkedin.com/company/dsc-umich/", "mailto:googledsc-requests@umich.edu"]
+            each icon, idx in icons
+                - const a_class = "ui circular " + icon + " icon button"
+                - const i_class = icon + " icon"
+                a(type="button" href=links[idx] class=a_class)
+                    i(class=i_class)
+
+            div#copyright.mt-2 Copyright &#169; University of Michigan DSC
+script.
+    var year = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML += " " + year;
