@@ -3,5 +3,7 @@
 
 node_modules
 
+# Manual build
 *.html
-/includes/*.html
+includes/*.html
+
