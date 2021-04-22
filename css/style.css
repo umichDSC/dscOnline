@@ -5,7 +5,7 @@
     --bg: white;
     --bg-secondary: #f8f8f8;
     --bg-tertiary: #0c0c0c;
-    --headings: #000;
+    --headings: black;
     --text: black;
     --text-secondary: black;
     --links: purple;
@@ -24,21 +24,21 @@ body {
 }
 
 html[data-theme="dark"] {
-    --bg: #121212;
-    --bg-secondary: lightgrey;
+    --bg: rgb(0, 35, 63);
+    --bg-secondary: rgb(83, 101, 131);
     --bg-tertiary: white;
-    --headings: #0c0c0c;
+    --headings: #bee0ff;
     --text: white;
-    --text-secondary: 0c0c0c;
+    --text-secondary: white;
     --links: pink; 
-}
-
-@media (prefers-color-scheme: dark) {
-
 }
 
 #content-grid {
     font-size: xx-large;
+}
+
+#content-grid h1 {
+    color: var(--headings);
 }
 
 .index-content {
@@ -47,7 +47,7 @@ html[data-theme="dark"] {
 }
 
 #main-wrapper {
-    height:100%;
+    min-height:100%;
     width:100%;
 }
 
@@ -69,6 +69,22 @@ html[data-theme="dark"] {
 
 .navbar-nav .nav-link {
     color: var(--text) !important;
+}
+
+.navbar .navbar-collapse > ul {
+    text-align: center;
+}
+
+.navbar .navbar-collapse > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.hamburger i {
+    color: var(--text);
+    font-size: 150%;
 }
 
 #dark-mode-button {

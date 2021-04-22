@@ -1,28 +1,32 @@
-nav#navbarID(class="navbar navbar-expand-lg navbar-light fs-5")
-    div.container 
+nav#navbarID.mb-4.navbar(class="navbar-expand-lg navbar-light fs-4")
+    div.container
         a.navbar-brand(href="./index.html")
             img(src="./images/logo.svg" height="30" alt="DSC Logo")
-        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-            span.navbar-toggler-icon
 
-        div#navbar-supported-content(class="collapse navbar-collapse")
+        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span.hamburger
+                i.fas.fa-bars
+
+        div#navbarSupportedContent.navbar-collapse.collapse
             //- - const pages = ["Team", "Events", "Resources"]
-            ul(class="navbar-nav mr-auto")
+            ul.navbar-nav.me-auto
                 //- - const link = "/html/" + page.toLowerCase() + ".html"
                 li.nav-item
-                  a.nav-link(href="./team.html") Team
+                  a.nav-link(href="./team.html") TEAM
                 li.nav-item 
-                  a.nav-link(href="./events.html") Events
+                  a.nav-link(href="./events.html") EVENTS
                 li.nav-item 
-                  a.nav-link(href="./resources.html") Resources
-
-        label.float-end
-            input#theme-toggler.toggle-checkbox(type='checkbox' onchange="toggleTheme(event)")
-            div.toggle-slot
-                div.sun-icon-wrapper
-                    div(class="iconify sun-icon" data-icon="feather-sun" data-inline="false")
-                div.toggle-button
-                    div.moon-icon-wrapper
-                        div(class="iconify moon-icon" data-icon="feather-moon" data-inline="false")
+                  a.nav-link(href="./resources.html") RESOURCES
+            
+        div#navbarSupportedContent.navbar-collapse.collapse
+            label.navbar-nav.ms-auto
+                input#theme-toggler.toggle-checkbox(type='checkbox' onchange="toggleTheme(event)")
+                div.toggle-slot
+                    div.sun-icon-wrapper
+                        div(class="iconify sun-icon" data-icon="feather-sun" data-inline="false")
+                    div.toggle-button
+                        div.moon-icon-wrapper
+                            div(class="iconify moon-icon" data-icon="feather-moon" data-inline="false")
+                        
 
 script(type="text/javascript" src="./js/nav.js")
