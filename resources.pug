@@ -1,29 +1,30 @@
 extends layout.pug 
 
-block content 
-    div(class="ui grid")
-        .row
-            div(class="one wide column")
-            div(class="five wide column")
-                div(class="ui centered header" style="font-size:300%;")
-                    | Google Technologies
-                a(class="ui link header" href="#") CodeLabs
-                br
-                a(class="ui link header" href="#") QwikLab
-                br
-                a(class="ui link header" href="#") APIs Explorer
-                br
-                a(class="ui link header" href="#") Pathways Explorer
-            div(class="five wide column")
-                div(class="ui centered header" style="font-size:300%;")
-                    | Club Resources
+block content
+    .container
+        div(class="ui grid")
+            .row
+                div(class="one wide column")
+                div(class="five wide column")
+                    h1(class="ui centered header" style="font-size:300%;")
+                        | Google Technologies
+                    a(class="ui link header" href="#") CodeLabs
                     br
-                a(class="ui link header" href="#") Google DSC Solution Challenge
-                br
-                a(class="ui link header" href="#") Shared Drive Link
-            div(class="five wide column")
-                div(class="ui centered header" style="font-size:300%;").
-                    Study Jams
-                a(class="ui link header" href="#") Intro to APIs
-                br
-                a(class="ui link header" href="#") Intro to Machine Learning
+                    a(class="ui link header" href="#") QwikLab
+                    br
+                    a(class="ui link header" href="#") APIs Explorer
+                    br
+                    a(class="ui link header" href="#") Pathways Explorer
+                div(class="five wide column")
+                    div(class="ui centered header" style="font-size:300%;")
+                        | Club Resources
+                        br
+                    a(class="ui link header" href="#") Google DSC Solution Challenge
+                    br
+                    a(class="ui link header" href="#") Shared Drive Link
+                div(class="five wide column")
+                    div(class="ui centered header" style="font-size:300%;").
+                        Study Jams
+                    a(class="ui link header" href="#") Intro to APIs
+                    br
+                    a(class="ui link header" href="#") Intro to Machine Learning
