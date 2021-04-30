@@ -79,7 +79,7 @@ html[data-theme="dark"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .hamburger i {
@@ -122,19 +122,20 @@ html[data-theme="dark"] {
     opacity: 0.3;
 }
 
-/* About */
-.card{
-    width: 10%;
+/* Team */
+@media screen and (max-width: 600px) {
+    .card {
+        min-width: 50%;
+    }
 }
 
 .image {
-    height: 250px;
+    height: 300px;
     overflow: hidden;
-    /* margin: auto; */
 }
 
 .image img {
-    min-height: 250px;
+    min-height: 300px;
 }
 
 /* Contact */
@@ -167,8 +168,8 @@ html[data-theme="dark"] {
 }
   
 .toggle-slot {
-    height: 3em;
-    width: 6em;
+    height: 2.5em;
+    width: 4em;
     border: 5px solid #e4e7ec;
     border-radius: 10em;
     background-color: white;
@@ -181,10 +182,10 @@ html[data-theme="dark"] {
 }
   
 .toggle-button {
-    transform: translate(3em, 0.2em);
+    transform: translate(1.8em, 0.2em);
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
     border-radius: 50%;
     background-color: #ffeccf;
     box-shadow: inset 0px 0px 0px 0.30em #ffbb52;
@@ -194,20 +195,20 @@ html[data-theme="dark"] {
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
     background-color: #485367;
     box-shadow: inset 0px 0px 0px 0.30em white;
-    transform: translate(0.4em, 0.2em);
+    transform: translate(0.3em, 0.2em);
 }
   
 .sun-icon {
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
     color: #ffbb52;
 }
   
 .sun-icon-wrapper {
     position: absolute;
-    height: 1.8em;
-    width: 1.8em;
+    height: 1.2em;
+    width: 1.2em;
     opacity: 1;
     transform: translate(0.3em, 0.2em) rotate(15deg);
     transform-origin: 50% 50%;
@@ -221,15 +222,15 @@ html[data-theme="dark"] {
   
 .moon-icon {
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
     color: white;
 }
   
 .moon-icon-wrapper {
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 1.2em;
+    width: 1.2em;
     opacity: 0;
     transform: translate(0.3em, 0.3em) rotate(0deg);
     transform-origin: 50% 50%;
@@ -238,6 +239,6 @@ html[data-theme="dark"] {
   
 .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
     opacity: 1;
-    transform: translate(2.8em, 0em) rotate(-15deg);
+    transform: translate(1.6em, 0em) rotate(-15deg);
 }
 /* End theme toggler */
