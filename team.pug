@@ -5,14 +5,14 @@ block content
         - const names = ["Edwin", "Cavun", "Ryan", "Juliet", "Isaiah", "Pratik", "Lauren", "Logan", "Jasmine", "Tiffany", "Tom", "Teoh"]
         - const roles = ["Lead", "Design and Engineering", "Design and Engineering", "Marketing", "Design and Engineering", "Project Management", "Lead", "Documentation", "Event Planning", "Marketing", "Design and Engineering", "Design and Engineering"]
         - const descs = ["I enjoy that we get the opportunity to learn about the technologies that are changing the world.", "The study jams are awesome.", "Google DSC has introduced me to so many powerful technologies.", "The club is full of passionate and fun people. Also everyone is incredibly intelligent and are great problem solvers.", "I love working with teams on the solution challenge.", "Nothing beats creating and doing meaningful projects for the community at large.", "Love seeing all of the amazing projects the Solution Challenge teams make.", "I love getting to work with a great team of passionate students who are motivated to create impact with Google technologies.", "Google DSC is a very open and inviting organization. We're affiliated with Google which means we have access to a lot of useful resources which some I didn't even know about before. I also love that we're given a lot of freedom to do what we want.", "The community is honestly so amazing.", "Awesome projects and awesome people.", "I get to work on cool projects like this website!"]
-        div(class="ui four stackable cards")
+        div.ui.stackable.cards.d-flex.justify-content-center
             each name, idx in names
                 - const image = "./images/team/" + name.toLowerCase() + ".jpg"
-                div(class="ui fluid card")
+                div.card
                     div.image
                         img(src=image)
                     div.content
                         div.header= name
-                        div.meta
                         span.date= roles[idx]
-                        div.description= descs[idx]
+                        div.meta
+                            div.description= descs[idx]
