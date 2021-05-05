@@ -110,11 +110,6 @@ html[data-theme="dark"] {
     color: var(--text) !important;
 } 
 
-.darkTest {
-    background-image: url("/images/giphy.gif") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
 
 /* Use for formatting carousel */
 #carouselContainer{
